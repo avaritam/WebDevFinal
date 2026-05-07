@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Good Things Archive</title>
+
+        <!-- Bootstrap -->
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+        <!-- PRELOAD -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- Google Font -->
+         <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-light bg-light px-3">
+
+            <div class="container-fluid">
+
+                <!-- MOBILE -->
+                <div class="d-flex w-100 justify-content-between align-items-center d-md-none">
+
+                <span class="navbar-brand mb-0 h1">Good Things</span>
+
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mobileMenu">
+
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+
+                </div>
+
+                <!-- MOBILE DROPDOWN -->
+                <div class="collapse navbar-collapse d-md-none" id="mobileMenu">
+                <div class="d-flex flex-column text-center mt-3">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="archive.html">Archive</a>
+                    <a class="nav-link active" href="create.html">Create</a>
+                </div>
+                </div>
+
+                <!-- DESKTOP -->
+                <div class="d-none d-md-block w-100">
+
+                <div class="row align-items-center text-center">
+
+                    <!-- Logo -->
+                    <div class="col text-start">
+                    <span class="navbar-brand mb-0 h1">Good Things</span>
+                    </div>
+
+                    <!-- Links -->
+                    <div class="col">
+                    <a class="nav-link d-inline mx-3" href="index.html">Home</a>
+                    <a class="nav-link d-inline mx-3" href="archive.html">Archive</a>
+                    <a class="nav-link d-inline mx-3 active" href="create.html">Create</a>
+                    </div>
+
+                    <!-- spacer -->
+                    <div class="col"></div>
+
+                </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+        <!-- Form -->
+        <div class="container wrapper mt-5">
+            <!-- Message area -->
+             <div class="left">
+                <h2>Share Your Good News!</h2>
+                <textarea id="message" class="form-control mt-3" placeholder="Write your good news..." rows="10"></textarea>
+                <!-- Submit button -->
+                <button onclick="saveMessage()" class="btn btn-dark mt-3">Submit</button>
+            </div>
+
+            <!-- Color selectors -->
+             <div class="right">
+                <label class="mt-3">Choose a color:</label>
+                <div class=" color-grid">
+                    <button onclick="setColor('#fed691')" class="color-btn" style="background: #fed691"></button>
+                    <button onclick="setColor('#ddbfe8')" class="color-btn" style="background: #ddbfe8"></button>
+                    <button onclick="setColor('#e6909f')" class="color-btn" style="background: #e6909f"></button>
+                    <button onclick="setColor('#e5db86')" class="color-btn" style="background: #e5db86"></button>
+                    <button onclick="setColor('#bdcdec')" class="color-btn" style="background: #bdcdec"></button>
+                    <button onclick="setColor('#dde1de')" class="color-btn" style="background: #dde1de"></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="confirmationModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content text-center p-4">
+                    <div class="modal-body">
+                        <p id="modal-message">Congrats! Your message was added to the archive!</p>
+                    </div>
+
+                    <button type="button" class="modal-btn btn btn-dark mt-2" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+        <!-- Bootstrap modal -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

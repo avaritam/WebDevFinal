@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Good Things Archive</title>
+
+        <!-- Bootstrap -->
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+        <!-- PRELOAD -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- Google Font -->
+         <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-light bg-light px-3">
+
+            <div class="container-fluid">
+
+                <!-- MOBILE -->
+                <div class="d-flex w-100 justify-content-between align-items-center d-md-none">
+
+                <span class="navbar-brand mb-0 h1">Good Things</span>
+
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mobileMenu">
+
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+
+                </div>
+
+                <!-- MOBILE DROPDOWN -->
+                <div class="collapse navbar-collapse d-md-none" id="mobileMenu">
+                <div class="d-flex flex-column text-center mt-3">
+                    <a class="nav-link active" href="index.html">Home</a>
+                    <a class="nav-link" href="archive.html">Archive</a>
+                    <a class="nav-link" href="create.html">Create</a>
+                </div>
+                </div>
+
+                <!-- DESKTOP -->
+                <div class="d-none d-md-block w-100">
+
+                <div class="row align-items-center text-center">
+
+                    <!-- Logo -->
+                    <div class="col text-start">
+                    <span class="navbar-brand mb-0 h1">Good Things</span>
+                    </div>
+
+                    <!-- Links -->
+                    <div class="col">
+                    <a class="nav-link d-inline mx-3 active" href="index.html">Home</a>
+                    <a class="nav-link d-inline mx-3" href="archive.html">Archive</a>
+                    <a class="nav-link d-inline mx-3" href="create.html">Create</a>
+                    </div>
+
+                    <!-- spacer -->
+                    <div class="col"></div>
+
+                </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+            <!-- dropdown -->
+            <div class="collapse" id="navMenu">
+            <div class="bg-light shadow p-3 text-center">
+
+                <a class="d-block py-2 nav-link" href="index.html">Home</a>
+                <a class="d-block py-2 nav-link" href="archive.html">Archive</a>
+                <a class="d-block py-2 nav-link" href="create.html">Create</a>
+
+            </div>
+
+            
+            </div>
+
+        <div class="index-container text-center mt-5">
+            <h1>An Anonymous Archive for Sharing the Good Things in Life</h1>
+
+            <p class="mt-3">
+                A place to share your small wins, big or small.
+                For those who have no one to tell or those who need a reminder that good things still happen.
+            </p>
+
+            <button onclick="location.href='archive.html'" class="btn btn-dark mt-4">
+                View Archive
+            </button>
+        </div>
+
+        <div class="note-scroll-wrapper mt-5">
+
+        <div class="note-scroll-track">
+
+            <div class="note-mini">I finally got through a hard week</div>
+            <div class="note-mini">Someone said something kind to me today</div>
+            <div class="note-mini">I finally finished a project I kept avoiding</div>
+            <div class="note-mini">Had a really peaceful morning</div>
+            <div class="note-mini">Reconnected with someone I missed</div>
+
+            <!-- duplicate for smooth loop -->
+            <div class="note-mini">I finally got through a hard week</div>
+            <div class="note-mini">Someone said something kind to me today</div>
+            <div class="note-mini">I finally finished a project I kept avoiding</div>
+            <div class="note-mini">Had a really peaceful morning</div>
+            <div class="note-mini">Reconnected with someone I missed</div>
+
+        </div>
+        </div>
+
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
